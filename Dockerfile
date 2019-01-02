@@ -6,6 +6,9 @@ ENV DEBIAN_FRONTEND=noninteractive \
 
 RUN apt-get --quiet update --yes
 
+# Git
+RUN apt-get --quiet install --yes git
+
 # OpenJDK
 RUN apt-get --quiet install --yes openjdk-8-jdk
 
